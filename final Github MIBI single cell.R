@@ -80,7 +80,7 @@ ggbarplot(density_CD206_per_point, x = "cell_type", y = "density",
 #####################################################################################################################################################################################
 #Distance Matrix Analysis
 #####################################################################################################################################################################################
-point_dist_home <- "/Users/Jk/Desktop/JG103_roots.nosync/CellsByRegion/Full_Root/Dist_matrixes/Point"
+point_dist_home <- ".../Dist_matrixes/Point"
 
 point = 1
 combined = NULL
