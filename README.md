@@ -10,7 +10,8 @@ Doublet detection. Doublet detection and removal was performed on the 30-week da
 Downstream analysis and data visualization. Identities of the cell clusters were determined using canonical cell type markers. For identification of cluster signature genes, we used the FindAllMarkers function in the Seurat package using the Wilcoxon Rank Sum test, testing genes that were detected in at least 25% of cells in either of the two groups with at least a 0.25 difference (log-scale) between the two groups, and at least 3 cells expressing the feature in at least one of the two groups. Differential gene expression within the Resident-like macrophage cluster was calculated using the FindMarkers function, using a negative binomial generalized linear model. We tested genes that were detected in at least 10% of cells in WT or mutant populations, with at least a 0.25 difference (log-scale) between the two groups of cells, and at least 3 cells expressing the feature in at least one of the two groups. The difference between the proportion of celltypes across different samples was calculated by a proportion test using the Single Cell Proportion Test R package (https://github.com/rpolicastro/scProportionTest).
 Analysis of the replicate 24-week dataset. For the replicate (24-week) dataset, an analogous analysis was performed with three modifications: (1) filtering parameters were nFeature_RNA > 300 & nFeature_RNA < 4500 & percent.mt < 15, again based on visualizing QC metrics; (2) we used sctransform-based normalization; (3) we selected 11 dimensions to cluster the cells, again based on the ElbowPlot.
 
-Multiplexed ion beam imaging time of flight (MIBI-TOF). 
+Multiplexed ion beam imaging time of flight (MIBI-TOF).
+
 MIBI-TOF Imaging
 Imaging was performed using a MIBI-TOF instrument with a Hyperion ion source. Xe+primary ions were used to sequentially sputter pixels for a given FOV. The following imaging parameters were used:
 • Pulse setting: Medium
