@@ -12,17 +12,17 @@ Downstream analysis and data visualization. Identities of the cell clusters were
 Analysis of the replicate 24-week dataset. For the replicate (24-week) dataset, an analogous analysis was performed with three modifications: (1) filtering parameters were nFeature_RNA > 300 & nFeature_RNA < 4500 & percent.mt < 15, again based on visualizing QC metrics; (2) we used sctransform-based normalization; (3) we selected 11 dimensions to cluster the cells, again based on the ElbowPlot.
 
 **Multiplexed ion beam imaging time of flight (MIBI-TOF)**<br>
-MIBI-TOF Imaging:
-Imaging was performed using a MIBI-TOF instrument with a Hyperion ion source. Xe+primary ions were used to sequentially sputter pixels for a given FOV. The following imaging parameters were used:
-• Pulse setting: Medium
-• Field size: 400 μm2 at 1024 x 1024 pixels
-• Dwell time: 0.5 ms
-• Median gun current on tissue: 4.11 nA Xe+
+MIBI-TOF Imaging:<br>
+Imaging was performed using a MIBI-TOF instrument with a Hyperion ion source. Xe+primary ions were used to sequentially sputter pixels for a given FOV. The following imaging parameters were used:<br>
+• Pulse setting: Medium<br>
+• Field size: 400 μm2 at 1024 x 1024 pixels<br>
+• Dwell time: 0.5 ms<br>
+• Median gun current on tissue: 4.11 nA Xe+<br>
 
-Low-level Image Processing:
+Low-level Image Processing:<br>
 Multiplexed image sets were extracted, slide background-subtracted, denoised, and aggregate filtered as previously described19. All parameters for these steps can be found in Extended Data Table 3.
 
-Single Cell Segmentation:
+Single Cell Segmentation:<br>
 Nuclear segmentation and localization was performed using DeepCell on aggregate filtered images (https://deepcell.org).
 
 Comments describing steps of analysis and generated figures are included in 3 .R files.
