@@ -67,16 +67,6 @@ density_celltypes_per_point_tibble$genotype <- ifelse(density_celltypes_per_poin
 density_celltypes_per_point_long <- gather(density_celltypes_per_point_tibble, cell_type, density, Activated_Endothelium:T_cells, factor_key=TRUE)
 density_celltypes_per_point_long$genotype <- factor(density_celltypes_per_point_long$genotype, levels = c("Tet2", "D3a", "WT"))
 
-#Figure 5b
-density_CD206_per_point <- density_celltypes_per_point_long %>% filter(cell_type == "CD206_Macs")
-write.csv(density_CD206_per_point, "CD206DensityPerPoint.csv")
-
-ggbarplot(density_CD206_per_point, x = "cell_type", y = "density",
-          add = c("mean_se", "point"),
-          color = "genotype", fill = "genotype", alpha = 0.5,
-          position = position_dodge(0.9))
-
-
 #####################################################################################################################################################################################
 #Distance Matrix Analysis
 #####################################################################################################################################################################################
